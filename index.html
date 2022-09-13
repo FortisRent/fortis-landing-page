@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<head>
+  <!-- Licences see "/LICENSES.txt" -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body lang="pt-BR">
+  <div class="igs-background-half">
+    <span class="igs-title" aria-hidden="true">Em</span>
+  </div>
+  <div class="igs-content">
+    <main class="igs-main">
+      <h1 class="igs-title" aria-label="Em construção.">construção</h1>
+      <p class="igs-description">
+        Em breve uma nova maneira de alugar equipamentos para sua obra.
+      </p>
+      <img
+        class="igs-landing-page-image"
+        src="img/building.svg"
+        alt="Desenho de uma tela de computador sendo construida por miniatura de pessoas."
+      />
+    </main>
+    <footer class="igs-footer">
+      <img class="igs-logo" alt="Logotipo da Fortis." src="img/logo.svg" />
+      <a class="igs-link" href="mailto:solution@fortis.net"
+        ><img
+          class="igs-link-img"
+          src="img/e-mail.svg"
+          alt="E-mail"
+        />solution@fortis.net</a
+      >
+      <a class="igs-link" href="tel:+554891582727"
+        ><img class="igs-link-img" src="img/phone.svg" alt="telefone" />(48)
+        99158-2727</a
+      >
+    </footer>
+  </div>
+  <style>
+    html,
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      margin: 0;
+      height: 100%;
+      font-family: "Montserrat", "Segoi UI", sans-serif;
+    }
+
+    .igs-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      padding: 0 4rem 4rem 4rem;
+      width: calc(100% - 4rem);
+      max-width: calc(50vw - 2rem);
+      height: 100%;
+      box-sizing: border-box;
+
+      color: #323d42;
+    }
+
+    .igs-title {
+      font-weight: 700;
+      font-size: 3rem;
+      padding: 0;
+
+      margin: 0;
+    }
+
+    .igs-landing-page-image {
+      position: absolute;
+      right: 4rem;
+      top: 4rem;
+      width: 40rem;
+    }
+
+    .igs-background-half {
+      display: flex;
+      background-color: #323d42;
+      color: #fff;
+      padding: 10% 4rem 0 4rem;
+    }
+
+    .igs-logo {
+      width: 12rem;
+    }
+    .igs-footer {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      padding-bottom: 1rem;
+    }
+
+    .igs-link {
+      display: flex;
+      align-items: center;
+      gap:0.5rem;
+      color: #323d42;
+      text-decoration: none;
+    }
+
+    .igs-link:hover, .igs-link:active {
+      text-decoration: underline;
+    }
+
+    .igs-link-img{
+      width: 2rem;
+    }
+
+    @media screen and (max-width: 64em) {
+      .igs-background-half {
+        justify-content: center;
+      }
+      .igs-content {
+        width: 100vw;
+        max-width: 100vw;
+      }
+      .igs-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .igs-landing-page-image {
+        position: initial;
+        max-width: calc(100vw - 4rem);
+      }
+      .igs-description {
+        text-align: center;
+      }
+      .igs-footer {
+        flex-direction: column;
+      }
+    }
+  </style>
+</body>
